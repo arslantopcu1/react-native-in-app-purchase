@@ -50,7 +50,7 @@ RCT_EXPORT_METHOD(purchase: (NSString*) productId
                   keyIdentifier: (NSString*) keyIdentifier
                   nonce: (NSString*) nonceString
                   signature: (NSString*) signature
-                  timestamp: (NSNumber*) timestamp) {
+                  timestamp: (nonnull NSNumber*) timestamp) {
     SKProduct* product = productsMap[productId];
 
     if (!product) {
